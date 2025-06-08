@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Soniya <span>Jadhav</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects Portfolio</a></li>
+        <li><a href="Resume.pdf">Resume</a></li>
+        <li><a href="skills.html">My Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <h2>Contact Me</h2>
+      <form class="contact-form" onsubmit="showPopup(event)">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <script>
+  function showPopup(event) 
+  {
+    alert("Thank you! Your message has been sent.");
+  }
+</script>
+<footer class="site-footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Soniya Jadhav. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
