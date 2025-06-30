@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabs = document.querySelectorAll('.tab-buttons li');
+      const contents = document.querySelectorAll('.tab-content');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(btn => btn.classList.remove('active'));
+          contents.forEach(c => c.classList.remove('active'));
+
+          tab.classList.add('active');
+          document.getElementById(tab.dataset.tab).classList.add('active');
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="navbar" role="navigation">
+      <a href="index.html" class="logo">
+        <img src="SDC Logo.png" alt="Sakthi Dental Clinic Logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="treatments.html">Treatments</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="#" class="btn primary-btn">Fix an Appointment</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section class="policy-tabs-section">
+      <h1>Privacy Policy</h1>
+      <div class="tab-container">
+        <ul class="tab-buttons" role="tablist">
+          <li class="active" data-tab="tab1" role="tab">Information We Collect</li>
+          <li data-tab="tab2" role="tab">Cookies</li>
+          <li data-tab="tab3" role="tab">How We Use Your Information</li>
+          <li data-tab="tab4" role="tab">Data Security</li>
+          <li data-tab="tab5" role="tab">Information Sharing</li>
+          <li data-tab="tab6" role="tab">Children's Privacy</li>
+          <li data-tab="tab7" role="tab">Changes to this Policy</li>
+          <li data-tab="tab8" role="tab">Acceptance of Terms</li>
+          <li data-tab="tab9" role="tab">Contact Us</li>
+        </ul>
+
+      <div class="tab-content active" id="tab1">
+        <p>We may collect personal identification information from users in several ways, including when users: <br/>
+           ● Visit our website <br/>
+           ● Fill out forms (e.g contact or appointment requests) <br/>
+           ● Engage with features, services, or resources on our site</p><br/>
+           <p><b>Types of information we may collect include:</b> <br/>
+           ● Name <br/>
+           ● Email address <br/>
+           ● Phone number</p><br/>
+           <p>
+            Users can visit our site anonymously. We only collect personal data when it is voluntarily submitted by users. Refusing to provide certain personal information may limit access to some site features or services. <br/>We may also gather <b>non-personal identification information,</b> such as: <br/>
+           ● Browser type <br/>
+           ● Device details <br/>
+           ● Operating system <br/>
+           ● Internet service provider <br/>
+           ● Technical data related to user interaction with the site<br/>
+           </p>
+      </div>
+
+      <div class="tab-content" id="tab2">
+        <p>Our website may use “cookies” to enhance the user experience. Cookies are small files stored on 
+a user's device for record-keeping purposes and to track preferences or site activity. <br>
+Users can set their browser to refuse cookies or alert them when cookies are being used. Please 
+note that disabling cookies may affect some site functionality.</p>
+      </div>
+
+      <div class="tab-content" id="tab3">
+        <p>Collected information may be used for the following purposes: <br/>
+● <b>To operate and manage the website:</b> Ensuring content displays properly and services 
+run smoothly. <br/>
+● <b>To improve customer service: </b>Helping us respond to inquiries more efficiently. <br/>
+● <b>To enhance the website experience: </b>Feedback provided may help us improve content, 
+usability, and performance. <br/>
+● <b>To communicate via email: </b>We may use the email address to respond to inquiries, 
+appointments, or service updates.</p>
+      </div>
+
+      <div class="tab-content" id="tab4">
+        <p>We implement appropriate security measures for data collection, storage, and processing to 
+safeguard your personal information from unauthorized access, alteration, or destruction.</p>
+      </div>
+
+      <div class="tab-content" id="tab5">
+        <p>We do not sell, trade, or rent personal identification information to third parties. <br/>
+We may share general demographic data (not linked to any personal information) with trusted 
+partners or affiliates to improve service delivery and site performance.</p>
+      </div>
+
+      <div class="tab-content" id="tab6">
+        <p>In compliance with the Children's Online Privacy Protection Act (COPPA), we do not knowingly 
+collect any personal information from children under the age of 13. Our site is not intended to 
+attract users below this age group.</p>
+      </div>
+
+      <div class="tab-content" id="tab7">
+        <p>Sakthi Dental Clinic may update this Privacy Policy from time to time. We encourage users to 
+review this page periodically to stay informed about how we protect your information. </p>
+      </div>
+
+      <div class="tab-content" id="tab8">
+        <p>By using this website, you agree to this policy. If you do not accept our Privacy Policy, please do 
+not use our website. <br/>
+Continued use of the site following any updates will be deemed as your acceptance of the revised 
+policy.</p>
+      </div>
+
+      <div class="tab-content" id="tab9">
+        <p>
+            If you have any questions about this Privacy Policy or your interactions with our site, please contact us:<br/>
+          <i class="fa-solid fa-map-pin"></i> <b>Address: </b>B2/8, SBM Layout, Anthivadi, Hosur, Tamil Nadu 635109, India<br/>
+          <i class="fa-solid fa-envelope"></i> <b>Email: </b>info@sakthidentalclinic.in<br/>
+          <i class="fa-solid fa-phone"></i> <b>Phone: </b> +91 9862890897 / +91 9363298118
+        </p>
+      </div>
+    </div>
+  </section>
+  </main>
+   <footer role="contentinfo">
+    <div class="footer-content">
+      <div class="footer-left">
+        <h3>Contact Us</h3>
+        <p>B2/8, SBM Layout, Anthivadi, Hosur, Tamil Nadu 635109, India</p>
+        <p>Email: info@sakthidentalclinic.in</p>
+        <p>Phone: +91 9862890897 / +91 9363298118</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="treatments.html">Treatments</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-treatments">
+        <h4>Key Treatments</h4>
+        <ul>
+          <li>Tooth Extraction</li>
+          <li>Braces & Aligners</li>
+          <li>Implants</li>
+          <li>Teeth Whitening</li>
+        </ul>
+      </div>
+      <div class="footer-socials">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
